@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Using Git API</title>
+		<script type="text/javascript" src="angular.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+		<link rel="stylesheet" href="effect.css" />
+	</head>
+	<body ng-app="gitAPI"> 
+		<div id="content_wrap">
+			<!--header div-->
+			<app-heading> </app-heading>
+
+			<!--div containing the body of the app-->
+			<div id="main_body" ng-controller="mainController as mainCtrl">
+				<data></data>
+				<display-tab></display-tab>
+			</div>
+
+			<!--final footer of the app-->
+			<contacts></contacts>
+		</div>
+
+	</body>
+</html>

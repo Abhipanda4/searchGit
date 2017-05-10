@@ -1,0 +1,18 @@
+<div id="user_details" ng-show="mainCtrl.foundData">
+	<p><strong>USERNAME:</strong> {{mainCtrl.userdetails.login}}</p>
+	<p><i>{{"___" + mainCtrl.userdetails.bio}}</i></p>
+	<table>
+		<tr>
+			<th>Repo Name</th>
+			<th>Size</th>
+			<th>Languages Used</th>
+			<th>Forks</th>
+		</tr>
+		<tr ng-repeat="repo in mainCtrl.repos">
+			<td>{{repo.name}}</td>
+			<td>{{repo.size}}</td>
+			<td>{{repo.language}}</td>
+			<td>{{repos.forks}}</td>
+		</tr>
+	</table>
+</div>
