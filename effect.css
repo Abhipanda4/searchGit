@@ -1,46 +1,119 @@
 #content_wrap{
 	position:absolute;
-	width:100%;
+	width:90%;
+	padding-left:5%;
+	padding-right:5%;
+	left:0;
+	background:linear-gradient(to right, #ff4e50, #f9d423);
+	min-height:100vh;
+	top:0;
 }
+
 #wrap_head{
 	position:relative;
-	padding:1%;
-	border:2px solid black;
-	width:96%;
-	top:0;
-	margin-bottom:5%;
-}
-#header{
-	width:90%;
-	position:relative;
-	left:0; right:0;
+	width:50%;
+	padding:2%;
+	font-family:'Arvo', sans-serif;
 	margin:0 auto;
-	padding:20px;
-	padding-left:3%;
-	padding-right:3%;
-	background:linear-gradient(to bottom right,#333333, #888888);
 	text-align:center;
-	color:white;
 }
 
 #main_body{
-	position:relative;
-	min-height:400px;
+	font-family: 'Ubuntu', sans-serif;
 }
-
 #input_data{
-	width:800px;
+	width:80%;
+	padding:3%;
 	margin:0 auto;
 	text-align:center;
 }
 
+#input_data > input{
+	width:40%;
+	height:40px;
+}
+
 #button{
-	width:60px;
-	height:60px;
-	border-radius:50px;
-	line-height:60px;
+	margin:0 auto;
+	margin-top:50px;
+	width:90px;
+	position:relative;
+	font-weight:bold;
+	border:3px solid black;
 	padding:20px;
-	border:2px solid #4411aa;
 	cursor:pointer;
-	margin:20px auto;
+	transition: all 0.3s linear;
+}
+
+#button:hover{
+	transform: scale(1.2, 1.2);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#user_details{
+	border:2px solid black;
+	position:relative;
+	margin:0 auto;
+	width:40%;
+	padding:1%;
+	text-align:center;
+	margin-bottom:250px;
+}
+
+@media only screen and (max-width: 1000px){
+	#user_details{
+		width:90%;
+	}
+}
+
+table{
+	width:100%;
+	position:relative;
+	margin:0 auto;
+}
+
+td, th{
+	border:2px solid black;
+	padding:4px;
+	margin:0;
+	text-align:center;
+}
+
+#user_details > img{
+	width:300px;
+	height:300px;
+	border-radius:150px;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+#footer{
+	position:absolute;
+	bottom:5px;
+	left:0; right:0;
+	width:60%;
+	margin:0 auto;
+	border:5px solid black;
+	text-align:center;
+	font-size:1.4em;
+	padding-top:20px;
+	height:150px;
+}
+
+#social > ul{
+	list-style-type:none;
+	padding:0;
+	font-size:0.8em;
+	margin-bottom:10px;
+}
+
+#social > ul > li{
+	float:left;
+	margin:1.5%;
+	width:22%;
+	padding-top:8px;
+	padding-bottom:8px;
+}
+.links{
+	color:black;
 }
